@@ -5,14 +5,14 @@ if (isset($_POST['submit']) ){
      $email = $_POST['email'];//atribui o valor digitado do usuario para a variavel $email
      $password = $_POST['password'];//atribui o valor digitado do usuario para a variavel $password
  
-    $sql = "SELECT *  FROM users WHERE email = '$email' AND senha = '$password' ";//verificação se o usuario está no banco de dados
+    $sql = "SELECT *  FROM users WHERE gmail = '$email' AND senha = '$password' ";//verificação se o usuario está no banco de dados
      $result = $conexion->query($sql);//query manda pro bd
     if(mysqli_num_rows($result) < 1){//verifica se tem no banco de dados o email e senha
         header("Location: login.html");
        // encaminha pra um lugar igual o href
     }else{
     
-        header("Location: pg.php");//se tiver no banco de dados envia pro site
+        header("Location: index.html");//se tiver no banco de dados envia pro site
     }
 }
 ?>

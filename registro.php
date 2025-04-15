@@ -79,7 +79,7 @@
 <body>
   <div class="container">
     <h2><i class="fas fa-user"></i> Cadastro de Usuário</h2>
-    <form  action = "registertest.php" method = "POST">
+    <form  action = "php/registertest.php" method = "POST">
       <label for="nome">Nome Completo:</label>
       <input type="text" id="nome" name="nome" autocomplete="given-name" required />
 

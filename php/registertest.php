@@ -12,5 +12,8 @@
  include_once('connection.php');
  if (isset($_POST['submit'])){
  $result = mysqli_query($conexion, "INSERT INTO usuarios (gmail, senha, datadenascimento,cpf,cep,cidade,rua,complemento) VALUES ('$email','$password','$data','$cpf','$cep','$cidade','$rua','$complemento')");
+ header("Location: login.html");
+ exit();
  }
+
 ?>
