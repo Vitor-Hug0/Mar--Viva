@@ -1,0 +1,83 @@
+/* Reset básico para margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9fbfd; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #40a6e0; /* Azul do mar */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo da seção de pescados */
+section#pescados {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo dos itens de pescado */
+.pescado {
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background-color: white; /* Fundo branco para os itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.2s; /* Efeito de transição */
+}
+
+.pescado:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo das imagens */
+.pescado img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estilo do botão de pagamento */
+.area-pagamento {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.area-pagamento .botao {
+    background-color: #28a745; /* Verde para o botão */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.area-pagamento .botao:hover {
+    background-color: #218838; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0077be; /* Azul do mar */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

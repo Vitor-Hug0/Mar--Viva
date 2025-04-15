@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maré Viva &#128031;</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos adicionais para o cabeçalho e botão */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #046e97; /* Cor de fundo do cabeçalho */
+            color: rgb(0, 0, 0);
+            position: relative; /* Necessário para o posicionamento absoluto do botão */
+            
+        }
+        .botao-login {
+            font-family: cursive;
+            position: absolute; /* Posiciona o botão de forma absoluta */
+            top: 10px; /* Distância do topo */
+            left: 10px; /* Distância da esquerda */
+            padding: 10px 20px; /* Preenchimento do botão */
+            background-color: #60a4f24d; /* Cor do botão */
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+        }
+        .botao-login:hover {
+            background-color: #3ba6ec; /* Cor do botão ao passar o mouse */
+            transform: scale(1.05)
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Maré Viva</h1>
+        <h2>Bem-vindo ao nosso site de venda de pescados!</h2>
+        <p>Descubra o frescor e a qualidade dos nossos produtos do mar.</p>
+        <a href="login.html" class="botao-login">Login</a> <!-- Botão de Login -->
+    </header>
+
+    <!-- Seção de Pescados -->
+    <section id="pescados">
+        <h2>Pescados Disponíveis</h2>
+
+        <div class="pescado">
+            <img src="imagens/marisco.jpg" alt="Mariscos Frescos" aria-label="Mariscos Frescos - R$ 30,00/kg">
+            <h2>Mariscos</h2>
+            <p>Mariscos Frescos - R$ 30,00/kg</p>
+        </div>
+
+        <div class="pescado">
+            <img src="imagens/peixe.jpg" alt="Peixe Fresco" aria-label="Peixe Fresco - R$ 48,47/kg">
+            <h2>Peixes</h2>
+            <p>Peixe Fresco - R$ 48,47/kg</p>
+        </div>
+
+        <div class="pescado">
+            <img src="imagens/camarao.jpg" alt="Camarões Frescos" aria-label="Camarões Frescos - R$ 42,99/kg">
+            <h2>Camarões</h2>
+            <p>Camarões Frescos - R$ 32,99/kg</p>
+        </div>
+
+        <div class="pescado">
+            <img src="imagens/lagosta.jpg" alt="Lagosta Fresca" aria-label="Lagosta Fresca - R$ 120,00/kg">
+            <h2>Lagosta</h2>
+            <p>Lagosta Fresca - R$ 65,99/kg</p>
+        </div>
+
+        <div class="pescado">
+            <img src="imagens/polvo.jpg" alt="Polvo Fresco" aria-label="Polvo Fresco - R$ 60,00/kg">
+            <h2>Polvo</h2>
+            <p>Polvo Fresco - R$ 32,50/kg</p>
+        </div>
+    </section>
+
+    <!-- Botão para ir para a área de pagamento -->
+    <div class="area-pagamento">
+        <a href="payment.html" class="botao">Ir para a Área de Pagamento</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Maré Viva. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

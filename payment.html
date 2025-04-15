@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Pagamento 🐟</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Altura total da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px; /* Largura máxima do contêiner */
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .payment-option {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        small {
+            display: block;
+            margin-top: 5px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Área de Pagamento</h2>
+    
+    <form id="paymentForm">
+        <div class="payment-option">
+            <h3>Pagamento com Cartão</h3>
+            <label for="cardNumber">Número do Cartão:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19">
+            
+            <label for="cardName">Nome no Cartão:</label>
+            <input type="text" id="cardName" name="cardName" required placeholder="Nome Completo" maxlength="50">
+            
+            <label for="expiryDate">Data de Validade:</label>
+            <input type="text" id="expiryDate" name="expiryDate" required placeholder="MM/AA" maxlength="5">
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required placeholder="XXX" maxlength="3">
+        </div>
+
+        <div class="payment-option">
+            <h3>Pagamento com PIX</h3>
+            <label for="pixKey">Chave PIX:</label>
+            <input type="text" id="pixKey" name="pixKey" required value="(88) 99495-2187" readonly maxlength="20">
+            <small>Esta é a chave PIX para pagamento.</small>
+        </div>
+
+        <button type="submit">Pagar</button>
+    </form>
+</div>
+
+</body>
+</html>
